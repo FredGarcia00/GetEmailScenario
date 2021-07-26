@@ -1,8 +1,11 @@
 import React from 'react';
 import EmailModal from './EmailModal/EmailModal';
+import {EMProvider} from './EmailModal/EmailProvider';
 
 const App = () => {
     return (
+        <EMProvider>
+
         <>
         <header className="page-header">
           <div className="logo">
@@ -18,6 +21,7 @@ const App = () => {
         <EmailModal/>
         <div className="email-modal" />
       </>
+        </EMProvider>
     )
 }
 
